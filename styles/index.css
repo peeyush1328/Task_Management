@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ebf2ff !important;
+}
+.new__btn__mobile_only {
+  margin-top: 40px;
+  left: 0;
+  bottom: 0;
+  padding: 10px 10px;
+  background: white;
+  z-index: 3;
+  width: 100%;
+}
