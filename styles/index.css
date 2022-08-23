@@ -4,14 +4,37 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #ebf2ff !important;
+  background-color: #86f1f2 !important;
+}
+footer {
+  height: 30px;
+  margin: 0;
+  clear: both;
+  width: 100%;
+  position: relative;
 }
 .new__btn__mobile_only {
-  margin-top: 40px;
-  left: 0;
-  bottom: 0;
   padding: 10px 10px;
-  background: white;
-  z-index: 3;
+}
+body,
+html {
+  height: 100%;
+}
+#holder {
+  min-height: 100%;
+  position: relative;
+  min-height: calc(100% - 30px);
+}
+.navbar {
+  background-color: #8995fa;
+}
+.card-img-top {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.place__holder__image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }

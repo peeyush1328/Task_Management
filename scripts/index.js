@@ -6,13 +6,13 @@ const taskcontents = document.querySelector(".task_content");
 const taskmodal = document.querySelector(".task_container_modal");
 
 const htmltaskcontent = ({ id, title, description, url }) => `
- <div class='col-md-6 col-lg-4 mt-3' id=${id} key=${id}>
+ <div class='col-md-6 col-lg-4 mt-3 card-container' id=${id} key=${id}>
  <div class='card shadow-sm task-card'>
  ${
    url
-     ? `<img width='100%' height='150px' style="object-fit: cover; object-position: center"  src=${url} alt='card image cap' class='card-image-top card-img-top md-3 rounded-lg' />`
+     ? `<img style="object-fit: cover; object-position: center"  src=${url} alt='card image cap' class='card-img-top md-3 rounded-lg img-fluid' />`
      : `
-<img width='100%' height='150px' style="object-fit: cover; object-position: center" src="https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png" alt='card image cap' class='img-fluid place__holder__image mb-3' />
+<img style="object-fit: cover; object-position: center" src="http://truongthanhhaibridal.com/Common/thumbnail-default.png" alt='card image cap' class='card-img-top md-3 rounded-lg img-fluid' />
 `
  }
  <div class='card-body'>
@@ -46,10 +46,10 @@ const htmlmodalcontent = ({ id, title, description, url }) => {
  ${
    url
      ? `
-    <img width='100%'height='150px' src=${url} alt='card image cap' class='img-fluid place__holder__image mb-3' />
+    <img src=${url} alt='card image cap' class='img-fluid place__holder__image mb-3' />
   `
      : `
-  <img width='100%' height='150px' src="https://reactnativecode.com/wp-content/uploads/2018/02/Default_Image_Thumbnail.png" alt='card image cap' class='img-fluid place__holder__image mb-3' />
+  <img src="http://truongthanhhaibridal.com/Common/thumbnail-default.png" alt='card image cap' class='img-fluid place__holder__image mb-3' />
   `
  }
  <strong class='text-sm text-muted'>Created on ${date.toDateString()}</strong>
